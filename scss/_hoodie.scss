@@ -1,0 +1,40 @@
+//BEM
+.formulario{
+    margin: 25px 25px;
+    background-color: rgb(22, 22, 22);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.formulario__titulo{
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.formulario__talles{
+  background-color: #000;
+  border-radius: 5px;
+}
+
+.formulario__btn{
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.formulario__mediosDePago{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.formulario__radio{
+  display: flex;
+  flex-flow: row nowrap;
+}

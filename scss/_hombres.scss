@@ -1,0 +1,37 @@
+.productosHombre {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-evenly; }
+  
+  .productosHombreDos {
+    @extend .productosHombre;
+    position: relative;
+    top: 25px;
+    right: 35px;
+    }
+  
+ @mixin imgSizes($width, $height) {
+     height: $height;
+     width: $width;
+ }
+
+ .fotosHombre{
+     @include imgSizes(225px, 300px)
+ }
+
+ #hombresMain{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-areas: 
+    '1 2'
+    '1 2';
+ }
+
+ @for $gridHombre from 1 through 2 {
+     .hombre#{$gridHombre}{grid-area:  $gridHombre;}
+ }
+
+ .columnHombres{
+     margin-left: 10px;
+ }
