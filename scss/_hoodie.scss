@@ -4,6 +4,7 @@
     background-color: rgb(22, 22, 22);
     padding: 20px;
     border-radius: 5px;
+    line-height: 2;
 }
 
 .formulario__titulo{
@@ -26,7 +27,12 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 25px;
+}
+
+.formulario__btn:hover{
+  background-color: rgb(110, 110, 110);
+  color: #000;
 }
 
 .formulario__mediosDePago{
@@ -37,4 +43,8 @@
 .formulario__radio{
   display: flex;
   flex-flow: row nowrap;
+}
+
+.formulario__radio--margen{
+  margin-left: 15px;
 }

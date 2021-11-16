@@ -49,9 +49,29 @@ footer{
 #copyright{
     margin: 2px 3px;
 }
+
+.contacto a{
+    color: white;
+    text-decoration: none;
+}
 /* ********************************************************************* */
 
+input[type=submit]{
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    opacity: 0%;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    width: 100px;
+    height: 40px;
+}
 
+input[type=submit]:hover {
+    opacity: 100%;
+    border: white 1px solid;
+}
 
 /* ********************************************************************* */
 
@@ -98,8 +118,8 @@ h1{
 #productos .prod{
     transition: all 500ms;
 
-    height: 600px;
     width: 350px;
+    height: 600px;
     text-align: center;
     align-items: center;
     padding: 30px;
@@ -108,7 +128,6 @@ h1{
 #productos .prod:hover{
     width: 500px;
     height: 650px;
-    opacity: 100%!important;
     border: white solid 2px;
 }
 

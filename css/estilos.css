@@ -43,7 +43,26 @@ footer {
 #copyright {
   margin: 2px 3px; }
 
+.contacto a {
+  color: white;
+  text-decoration: none; }
+
 /* ********************************************************************* */
+input[type=submit] {
+  background-color: #000;
+  color: white;
+  text-decoration: none;
+  border: none;
+  opacity: 0%;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  width: 100px;
+  height: 40px; }
+
+input[type=submit]:hover {
+  opacity: 100%;
+  border: white 1px solid; }
+
 /* ********************************************************************* */
 /* Seccion INDEX */
 /* IMG */
@@ -81,8 +100,8 @@ h1 {
 
 #productos .prod {
   transition: all 500ms;
-  height: 600px;
   width: 350px;
+  height: 600px;
   text-align: center;
   align-items: center;
   padding: 30px;
@@ -91,7 +110,6 @@ h1 {
 #productos .prod:hover {
   width: 500px;
   height: 650px;
-  opacity: 100% !important;
   border: white solid 2px; }
 
 /* ********************************************************************* */
@@ -193,7 +211,8 @@ section input {
   margin: 25px 25px;
   background-color: #161616;
   padding: 20px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  line-height: 2; }
 
 .formulario__titulo {
   font-size: 2rem;
@@ -213,7 +232,11 @@ section input {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-top: 10px; }
+  margin-top: 25px; }
+
+.formulario__btn:hover {
+  background-color: #6e6e6e;
+  color: #000; }
 
 .formulario__mediosDePago {
   display: flex;
@@ -222,6 +245,9 @@ section input {
 .formulario__radio {
   display: flex;
   flex-flow: row nowrap; }
+
+.formulario__radio--margen {
+  margin-left: 15px; }
 
 .img__carrousel {
   height: 55vh; }
