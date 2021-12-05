@@ -27,41 +27,34 @@ body {
   margin-bottom: 50px; }
 
 /* ********************************************************************* */
-/* Footer / Flex */
-footer {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-content: space-between;
-  align-items: baseline;
-  border-top: #fff solid 1px;
-  padding-top: 20px; }
-
-.titulosFooter {
-  margin-bottom: 5px; }
-
-#copyright {
-  margin: 2px 3px; }
-
-.contacto a {
-  color: white;
-  text-decoration: none; }
-
-/* ********************************************************************* */
-input[type=submit] {
-  background-color: #000;
-  color: white;
-  text-decoration: none;
-  border: none;
-  opacity: 0%;
-  cursor: pointer;
-  transition: all 500ms ease-in-out;
-  width: 100px;
-  height: 40px; }
+/* input[type=submit]{
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    opacity: 0%;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    width: 100px;
+    height: 40px;
+}
 
 input[type=submit]:hover {
-  opacity: 100%;
-  border: white 1px solid; }
+    opacity: 100%;
+    border: white 1px solid;
+} */
+/* ********************************************************************* */
+/* Banner Mobile */
+@media (min-width: 600px) {
+  #Banner-Mobile {
+    display: none; } }
+
+@media (max-width: 600px) {
+  #carouselUnity {
+    display: none; } }
+
+#Banner-Mobile {
+  margin-top: 50px; }
 
 /* ********************************************************************* */
 /* Seccion INDEX */
@@ -100,18 +93,20 @@ h1 {
 
 #productos .prod {
   transition: all 500ms;
-  width: 350px;
-  height: 600px;
+  width: 25em;
+  height: 40em;
   text-align: center;
   align-items: center;
   padding: 30px;
   cursor: pointer; }
 
 #productos .prod:hover {
-  width: 500px;
-  height: 650px;
   border: white solid 2px;
-  transition: scale(1.2, 1.2); }
+  transform: scale(1.1, 1.1); }
+
+@media (max-width: 850px) {
+  .prod {
+    margin-top: 30px; } }
 
 /* ********************************************************************* */
 /* Seccion Newsletter */
@@ -155,15 +150,14 @@ section input {
   border-bottom: #fff 2px solid;
   transform: scaleX(0);
   transition: 250ms ease-in-out;
-  margin-top: 5px; }
+  margin-top: 2px; }
 
 .nav-item:hover::after {
   transform: scaleX(0.7); }
 
-nav div form {
-  position: relative;
-  left: 100%; }
-
+/* nav div form{
+    ;
+} */
 /* ******************************************************************* */
 /* ACCESORIOS */
 #accesoriosImg {
@@ -267,7 +261,9 @@ nav div form {
   margin-left: 15px; }
 
 .img__carrousel {
-  height: 55vh; }
+  height: 75vh;
+  width: 100%;
+  object-fit: contain; }
 
 .info__FAQ {
   text-align: center;
@@ -305,3 +301,64 @@ nav div form {
 
 .columnHombres {
   margin-left: 10px; }
+
+/* FOOTER */
+footer {
+  margin-top: 150px;
+  padding-top: 50px;
+  background-color: #0c0c0c; }
+
+footer a {
+  color: #fff;
+  text-decoration: none; }
+
+footer a:hover {
+  color: #fff; }
+
+footer i {
+  font-size: 3rem;
+  transition: transform 250ms; }
+
+footer i:hover {
+  transform: skewX(15deg); }
+
+@media (max-width: 992px) {
+  .footer--ubicacion {
+    margin-top: 25px; }
+  .footer--ubicacion > h3 {
+    color: #dddddd;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 10px; }
+  .footer--ubicacion > p {
+    text-align: center; }
+  footer {
+    text-align: center; } }
+
+@media (min-width: 992px) {
+  .footer--ubicacion p .footer-icon {
+    display: none; } }
+
+.footer--MDP__img {
+  width: 25px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 500ms;
+  border-radius: 35px; }
+
+.footer--MDP__img:hover {
+  transform: translateY(-15px); }
+
+.footer--MDP__Center {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-bottom: 25px; }
+
+.container__mt {
+  border-radius: 35px;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  background-color: black; }

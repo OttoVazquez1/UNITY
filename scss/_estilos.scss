@@ -32,31 +32,8 @@ body{
 }
 /* ********************************************************************* */
 
-/* Footer / Flex */
-footer{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-content: space-between;
-    align-items: baseline;
-    border-top: #fff solid 1px;
-    padding-top: 20px;
-}
-.titulosFooter{
-    margin-bottom: 5px;
-}
 
-#copyright{
-    margin: 2px 3px;
-}
-
-.contacto a{
-    color: white;
-    text-decoration: none;
-}
-/* ********************************************************************* */
-
-input[type=submit]{
+/* input[type=submit]{
     background-color: #000;
     color: white;
     text-decoration: none;
@@ -71,8 +48,24 @@ input[type=submit]{
 input[type=submit]:hover {
     opacity: 100%;
     border: white 1px solid;
+} */
+/* ********************************************************************* */
+/* Banner Mobile */
+@media (min-width: 600px) {
+    #Banner-Mobile{
+        display: none;
+    }
 }
 
+@media (max-width: 600px){
+    #carouselUnity{
+        display: none;
+    }
+}
+
+#Banner-Mobile{
+    margin-top: 50px;
+}
 /* ********************************************************************* */
 
 /* Seccion INDEX */
@@ -118,20 +111,23 @@ h1{
 #productos .prod{
     transition: all 500ms;
 
-    width: 350px;
-    height: 600px;
+    width: 25em;
+    height: 40em;
     text-align: center;
     align-items: center;
     padding: 30px;
     cursor: pointer;
 }
 #productos .prod:hover{
-    width: 500px;
-    height: 650px;
     border: white solid 2px;
-    transition: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
 }
 
+@media (max-width: 850px) {
+    .prod{
+        margin-top: 30px;
+    }
+}
 
 /* ********************************************************************* */
 
@@ -184,16 +180,15 @@ section input{
     border-bottom: #fff 2px solid;
     transform: scaleX(0);
     transition: 250ms ease-in-out;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 .nav-item:hover::after{
     transform: scaleX(0.7);
 }
 
-nav div form{
-    position: relative;
-    left: 100%;
-}
+/* nav div form{
+    ;
+} */
 /* ******************************************************************* */
 
 /* ACCESORIOS */
