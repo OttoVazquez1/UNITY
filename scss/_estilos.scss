@@ -12,25 +12,7 @@ body{
 
 /* ********************************************************************* */
 
-/* Index Nuevos Productos */
 
-.tablaDeProductosFlex article{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: space-between;
-    align-items: baseline;
-    margin-bottom: 10px;
-}
-
-#videoProductos{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center ;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-/* ********************************************************************* */
 
 
 /* input[type=submit]{
@@ -86,13 +68,13 @@ h1{
     padding: 40px;
 }
 
-#productos div p{
+.productos div p{
     font-style: italic;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-#productos div input{
+.productos div input{
     color: white;
     background-color: #000000;
     font-size: 20px;
@@ -102,75 +84,61 @@ h1{
     text-align: center;
     border-radius: 4px;
 }
-#productos div input:hover{
+.productos div input:hover{
     background-color: #fff;
     color: black;
     border: black 2px solid;
 }
 
-#productos .prod{
-    transition: all 500ms;
 
-    width: 25em;
-    height: 40em;
-    text-align: center;
-    align-items: center;
-    padding: 30px;
-    cursor: pointer;
-}
-#productos .prod:hover{
+
+@media (min-width:992px){
+    .productos .prod{
+        transition: transform border 500ms;
+    
+        width: 25em;
+        height: 40em;
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .productos .prod:hover{
     border: white solid 2px;
     transform: scale(1.1, 1.1);
-}
+    }
 
-@media (max-width: 850px) {
-    .prod{
-        margin-top: 30px;
+    .productos--imagen__320x400{
+    width: 320px;
+    height: 400px;
     }
 }
 
-/* ********************************************************************* */
+@media (max-width: 992px) {
+    .productos .prod{
+        margin-top:30px;
+        margin-bottom: 10px;
+        width: 20em;
+        text-align: center;
+        align-items: center;
+        padding: 30px;
+        cursor: pointer;
+    }
 
-/* Seccion Newsletter */
+    .productos .prod{
+        width: 15em;
+        height: 40em;
+    }
 
-.newsletter{
-    margin-bottom: 60px;
-    margin-left: 30px;
+    .productos--imagen__320x400{
+        width: 200px;
+        height: 300px;
+    }
 }
 
-/* ******************************************************************** */
 
-/* Seccion HOODIE */
 
-/* Hoodie */
-.hoodie{
-    margin-left: 30px;
-}
-
-.buzosFlex{
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    align-items: baseline;
-    justify-content: space-evenly;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-/* Nosotros */
-#nosotros{
-    margin-left: 30px;
-}
-
-/* Hoodie Form */
-select{
-    color: #000;
-}
-section input{
-    color: #000;
-}
 
 /* ******************************************************************* */
 /* Nav */
@@ -184,80 +152,4 @@ section input{
 }
 .nav-item:hover::after{
     transform: scaleX(0.7);
-}
-
-/* nav div form{
-    ;
-} */
-/* ******************************************************************* */
-
-/* ACCESORIOS */
-#accesoriosImg{
-    margin-bottom: 40px;
-}
-.accesoriosAside div{
-    display: block;
-
-}
-.accesoriosAside {
-    margin-left: 15px;
-    margin-bottom: 5px;
-}
-
-.accesoriosAside h3{
-    margin-bottom: 10px;
-}
-
-.accesoriosProdUno{
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: space-evenly;
-    margin-bottom: 25px;
-    position: relative;
-    bottom: 200px;
-}
-
-.accesoriosProdDos{
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: space-evenly;
-    position: relative;
-    bottom: 100px;
-}
-
-/* ********************************************************************** */
-
-/* MUJERES */
-
-.mujeresAside div{
-    display: block;
-
-}
-
-.mujeresAside {
-    margin-left: 15px;
-    margin-bottom: 5px;
-    position: relative;
-    top: 100px;
-}
-
-.mujeresProdUno{
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: space-evenly;
-    margin-bottom: 25px;
-    position: relative;
-    bottom: 100px;
-}
-
-.mujeresProdDos{
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    justify-content: space-evenly;
-    position: relative;
-    bottom: 50px;
 }

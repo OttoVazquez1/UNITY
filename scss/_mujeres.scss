@@ -1,0 +1,42 @@
+@media (max-width:992px) {
+    .mujeres__talles{
+        margin-bottom: 50px;
+    }
+}
+
+#mujeres{
+    margin-top: 150px;
+}
+
+.mujeres__productos{
+    text-align: center;
+}
+
+.mujeres__productos div > p {
+    font-style: italic;
+}
+
+.mujeres__productos div > input[type=submit]{
+    color: white;
+    background-color: #000000;
+    font-size: 20px;
+    padding: 14px 28px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.mujeres__productos div > input[type=submit]:hover{
+    background-color: #fff;
+    color: black;
+    border: black 2px solid;
+}
+
+.mujeres__productos .col{
+    height: 35em;
+}
+
+.mujeres__productos .row{
+    margin-bottom: 25px;
+}

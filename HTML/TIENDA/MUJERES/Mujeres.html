@@ -5,6 +5,7 @@
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
             <link rel="stylesheet" href="../../../css/estilos.css">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -37,133 +38,154 @@
                           <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../hoodie.html">Personaliza tu hoodie!</a>
                           </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="../../NOSOTROS/info.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <li class="nav-item">
+                            <a class="nav-link active" href="../../NOSOTROS/info.html">
                               +Info
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="../../NOSOTROS/info.html#nosotros">Nosotros</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="../../NOSOTROS/info.html#FAQ">F.A.Q.</a></li>
-                              
-                            </ul>
                           </li>
-                          
-                        <form class="d-flex">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
                     </div>
                     </div>
                 </nav>
             </div>
-        <main>
-            <aside class="mujeresAside"> <!-- Columna Filtrado -->
-                <h3>Filtrar por:</h3>
-                <span>Talles</span>
-                <div>
-                    <input type="checkbox" name="XS"> 
-                    <label for="XS">XS</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="S"> 
-                    <label for="S">S</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="M"> 
-                    <label for="M">M</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="L"> 
-                    <label for="L">L</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="XL"> 
-                    <label for="XL">XL</label>
-                </div>
-                <div>
-                    <input type="checkbox" name="XXL"> 
-                    <label for="XXL">XXL</label>
-                </div>
-            </aside>
-            <section><!-- Productos -->
-                <article class="mujeresProdUno">
-                    <div>
-                        <img src="../../../img/women/curesweat.jpg" alt="The Cure Sweatshirt" class="fotosHombre">
-                        <h3>The Cure Sweatshirt</h3>
-                            <p>$7900 ARS</p>
-                        <input type="submit" value="Comprar">
+        <main id="mujeres">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col col-lg-2 mujeres__talles"> <!-- Columna Filtrado -->
+                        <h3>Filtrar por:</h3>
+                        <span>Talles</span>
+                        <div class="container">
+                            <div class="row row-cols-6 row-cols-lg-1">
+                                <div class="col">
+                                    <input type="checkbox" name="XS">
+                                    <label for="XS">XS</label>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="S">
+                                    <label for="S">S</label>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="M">
+                                    <label for="M">M</label>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="L">
+                                    <label for="L">L</label>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="XL">
+                                    <label for="XL">XL</label>
+                                </div>
+                                <div class="col">
+                                    <input type="checkbox" name="XXL">
+                                    <label for="XXL">XXL</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="../../../img/women/graph hoodie.jpg" alt="Mickey Hoodie" class="fotosHombre">
-                        <h3>Hoodie Mickey</h3>
-                            <p>$5900 ARS</p>
-                        <input type="submit" value="Comprar">
+                    <div class="col col-lg-10"><!-- Productos -->
+                        <div class="container mujeres__productos" data-aos="fade-left">
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-evenly">
+                                <div class="col">
+                                    <img src="../../../img/women/curesweat.jpg" alt="The Cure Sweatshirt" class="fotosHombre">
+                                    <h3>The Cure Sweatshirt</h3>
+                                        <p>$7900 ARS</p>
+                                    <input type="submit" value="Comprar">
+                                </div>
+                                <div class="col">
+                                    <img src="../../../img/women/graph hoodie.jpg" alt="Mickey Hoodie" class="fotosHombre">
+                                    <h3>Hoodie Mickey</h3>
+                                        <p>$5900 ARS</p>
+                                    <input type="submit" value="Comprar">
+                                </div>
+                                <div class="col"> 
+                                    <img src="../../../img/women/hmgoepprod.jpg" alt="Black Hoodie" class="fotosHombre">
+                                    <h3>Hoodie Black</h3>
+                                        <p>$4900 ARS</p>
+                                    <input type="submit" value="Comprar">
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-evenly">
+                                <div class="col">
+                                    <img src="../../../img/women/jumpsuit.jpg" alt="Jumpsuit" class="fotosHombre">
+                                    <h3>Jumpsuit</h3>
+                                        <p>$7.200 ARS</p>
+                                    <input type="submit" value="Comprar">
+                                </div>
+                                <div class="col">
+                                    <img src="../../../img/women/overalls.jpg" alt="Denim Overall" class="fotosHombre">
+                                    <h3>Denim Overall</h3>
+                                        <p>$7.500 ARS</p>
+                                    <input type="submit" value="Comprar">
+                                </div>
+                                <div class="col">
+                                    <img src="../../../img/women/whiteblazer.jpg" alt="Blazer Bouclé" class="fotosHombre">
+                                    <h3>Blazer Bouclé</h3>
+                                        <p>$15.000 ARS</p>
+                                    <input type="submit" value="Comprar">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <img src="../../../img/women/hmgoepprod.jpg" alt="Black Hoodie" class="fotosHombre">
-                        <h3>Hoodie Black</h3>
-                            <p>$4900 ARS</p>
-                        <input type="submit" value="Comprar">
-                    </div>
-                </article>
-                <article class="mujeresProdDos">
-                    <div>
-                        <img src="../../../img/women/jumpsuit.jpg" alt="Jumpsuit" class="fotosHombre">
-                        <h3>Jumpsuit</h3>
-                            <p>$7.200 ARS</p>
-                        <input type="submit" value="Comprar">
-                    </div>
-                    <div>
-                        <img src="../../../img/women/overalls.jpg" alt="Denim Overall" class="fotosHombre">
-                        <h3>Denim Overall</h3>
-                            <p>$7.500 ARS</p>
-                        <input type="submit" value="Comprar">
-                    </div>
-                    <div>
-                        <img src="../../../img/women/whiteblazer.jpg" alt="Blazer Bouclé" class="fotosHombre">
-                        <h3>Blazer Bouclé</h3>
-                            <p>$15.000 ARS</p>
-                        <input type="submit" value="Comprar">
-                    </div>
-                </article>
-            </section>
+                </div>
+            </div>
         </main>
-        <footer class="footer">
-            <div class="contacto"><!-- Sección Contacto -->
-                <h2 class="titulosFooter">Ponete en contacto</h2>
-                <p>WhatsApp: +54 15 1234 5678</p>
-                <p>Email: <a href="">Info@unity.com</a></p>
+        <footer>
+            <div class="container">
+              <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1">
+                <div class="col" data-aos="fade-right"><!-- Sección Contacto -->
+                    <h3 class="h2 fw-bold">Ponete en contacto</h3>
+                    <p>WhatsApp: +54 15 1234 5678</p>
+                    <p>Email: <a href="">Info@unity.com</a></p>
+                    <div class="footer-seguinos">
+                        <h3 class="h2 fw-bold">Seguinos</h3>
+                        <div class="container">
+                          <div class="row row-cols-5 justify-content-evenly">
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                            <a href="https:www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
+                            <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer--ubicacion" data-aos="fade-left"><!-- Ubicación -->
+                    <p>
+                      <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop-on-hover" colors="primary:#ffffff,secondary:#b4b4b4" style="width:100px;height:100px" class="footer-icon"></lord-icon>
+                    </p>
+                    <h3 class="h2 fw-bold">Visitanos!</h3>
+                    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9868764920675!2d-58.50626478416144!3d-34.85655707842811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd13e3bc7b6c7%3A0xd9970de89e32ab48!2sLas%20Toscas%20Canning%20Shopping!5e0!3m2!1ses!2sar!4v1632415749104!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                </div>
+              </div>
             </div>
-            <div class="seguinos">
-                <h2 class="titulosFooter">Seguinos</h2>
-                <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-                <a href="https:www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
-                <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+            <div class="container container__mt" data-aos="fade-down"><!-- Medios de Pago -->
+              <h3 class="h2 col footer--MDP__Center fw-bold">Medios de pago</h3>
+                <div class="container">
+                  <div class="row row-cols-7">
+                    <img src="../../../img/visa.png" alt="visa" class="col footer--MDP__img">
+                    <img src="../../../img/mastercard.png" class="col footer--MDP__img" alt="mastercard">
+                    <img src="../../../img/amex.png" alt="american express" class="col footer--MDP__img">
+                    <img src="../../../img/diners.png" alt="diners club" height="25" class="col footer--MDP__img" width="40">
+                    <img src="../../../img/mercadopago.png" alt="mercadopago" class="col footer--MDP__img">
+                    <img src="../../../img/rapipago.png" alt="rapipago" class="col footer--MDP__img">
+                    <img src="../../../img/pagofacil.png" alt="pagofacil" class="col footer--MDP__img">
+                  </div>
+                </div>
             </div>
-            <div class="ubicacion"><!-- Ubicación -->
-                <h2 class="titulosFooter">Visitanos!</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9868764920675!2d-58.50626478416144!3d-34.85655707842811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd13e3bc7b6c7%3A0xd9970de89e32ab48!2sLas%20Toscas%20Canning%20Shopping!5e0!3m2!1ses!2sar!4v1632415749104!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                
             </div>
-            <div class="mediosDePago"><!-- Medios de Pago -->
-                <h2 class="titulosFooter">Medios de pago</h2>
-                    <img src="../../../img/visa.png" alt="visa" height="25" width="40">
-                    <img src="../../../img/mastercard.png" alt="mastercard" height="25" width="40">
-                    <img src="../../../img/amex.png" alt="american express" height="25" width="40">
-                    <img src="../../../img/diners.png" alt="diners club" height="25" width="40">
-                    <img src="../../../img/mercadopago.png" alt="mercadopago" height="25" width="40">
-                    <img src="../../../img/rapipago.png" alt="rapipago" height="25" width="40">                        
-                    <img src="../../../img/pagofacil.png" alt="pagofacil" height="25" width="40">
-            </div>  
-                <hr>
-        </footer>
             <div id="copyright">
                 <p>© Copyrigth 2021 | Todos los derechos reservados.</p>
             </div>
+        </footer>
+        <!-- BS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     </body>
 </html>
     

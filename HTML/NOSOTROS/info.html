@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1231d27bf3.js" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
     <meta name="description" content="UNITY, quienes somos">
 </head>
 <body>
-    <div><!-- Menu Desplegable -->
+    <div class="container"><!-- Menu Desplegable -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
             <div class="container-fluid">
               <a class="navbar-brand" href="../../index.html">
@@ -37,47 +38,34 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="../TIENDA/hoodie.html">Personaliza tu hoodie!</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="info.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      +Info
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="info.html#nosotros">Nosotros</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="info.html#FAQ">F.A.Q.</a></li>
-                      
-                    </ul>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../NOSOTROS/info.html">+Info</a>
                   </li>
-                  
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
               </div>
             </div>
           </nav>
     </div>
     <main> <!-- Información -->
         <div>
-            <img src="../../img/nos.jpg" alt="nosotros" class="imagenCentrada">
+            <img src="../../img/nos.jpg" alt="nosotros" class="w-100">
         </div>    
-        <section id="nosotros">
-            <h1 class="nosotrosTitulos">Acerca de nosotros</h1>
+        <section id="nosotros" data-aos="zoom-out-down">
+            <h1 class="nosotrosTitulos fw-bold">Acerca de nosotros</h1>
             <p>CONTROL fue fundada en Canning por dos hermanos apasionados por la moda y con el afán de crear piezas que se destaquen por su calidad y confort, sin dejar de lado el estilo. <br>
                 El cliente es el centro de nuestro particular modelo de negocio, que integra diseño, fabricación, distribución y venta.
             </p>
         </section>
         <br>
         <br>
-        <section class="info__newsletter"> <!-- Newsletter -->
-            <h2>Suscribite a nuestro newsletter</h2>
+        <section class="info__newsletter" data-aos="fade-down"> <!-- Newsletter -->
+            <h2 class="fw-bold">Suscribite a nuestro newsletter</h2>
             <input type="email" name="correo" placeholder="Ingresá tu mail aquí">
             <input type="submit" value="Enviar" id="enviarNewsletter">
         </section>
         <hr>
         <section class="info__FAQ" id="FAQ"><!-- F.A.Q. -->
-            <h2>F.A.Q.</h2><br>
-           <details>
+            <h2 data-aos="zoom-in">F.A.Q.</h2><br>
+           <details data-aos="zoom-in-right">
                <summary ::marker>
                     <strong>El envío tiene costo?</strong>
                </summary>
@@ -85,7 +73,7 @@
            </details>
            <br>
            <br>
-           <details>
+           <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Tienen cuotas sin interés?</strong>
                 </summary>
@@ -93,7 +81,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Puedo pagar con efectivo?</strong>
                 </summary>
@@ -101,7 +89,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Cómo se realizan los envíos?</strong>
                 </summary>
@@ -110,7 +98,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Dónde puedo recibir mi pedido?</strong>
                 </summary>
@@ -118,7 +106,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>No estoy seguro de mi talle, dónde veo las medidas de las prendas?</strong>
                 </summary>
@@ -126,7 +114,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Cuánto tarda en llegar el pedido?</strong>
                 </summary>
@@ -134,7 +122,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Necesito comprar y tener los productos cuanto antes, qué opciones tengo?</strong>
                 </summary>
@@ -154,7 +142,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Cuál es el plazo para realizar un cambio?</strong>
                 </summary>
@@ -162,7 +150,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Qué debo hacer si el producto no llega en buen estado?</strong>
                 </summary>
@@ -170,7 +158,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Elegí un medio de pago y quiero cambiarlo, puedo?</strong>
                 </summary>
@@ -178,7 +166,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Vivo en Capital Federal o Gran Buenos Aires y quiero comprar pero no abonar el envío cómo hago?</strong>
                 </summary>
@@ -186,7 +174,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Puedo comprar en el local directamente? Los precios difieren? Cuáles son los medios de pago?</strong>
                 </summary>
@@ -194,7 +182,7 @@
             </details>
             <br>
             <br>
-            <details>
+            <details data-aos="zoom-in-right">
                 <summary ::marker>
                     <strong>Compré un producto y quiero cambiar el talle que elegí, cómo hago?</strong>
                 </summary>
@@ -202,40 +190,62 @@
             </details>
         </section>
     </main>
-    <footer class="footer">
-        <div class="contacto"><!-- Sección Contacto -->
-            <h2 class="titulosFooter">Ponete en contacto</h2>
-            <p>WhatsApp: +54 15 1234 5678</p>
-            <p>Email: <a href="">Info@unity.com</a></p>
+    <footer>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
+          <div class="col" data-aos="fade-right"><!-- Sección Contacto -->
+              <h3 class="h2 fw-bold">Ponete en contacto</h3>
+              <p>WhatsApp: +54 15 1234 5678</p>
+              <p>Email: <a href="">Info@unity.com</a></p>
+              <div class="footer-seguinos">
+                  <h3 class="h2 fw-bold">Seguinos</h3>
+                  <div class="container">
+                    <div class="row row-cols-5 justify-content-evenly">
+                      <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                      <a href="https:www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
+                      <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col footer--ubicacion" data-aos="fade-left"><!-- Ubicación -->
+              <p>
+                <lord-icon src="https://cdn.lordicon.com/zzcjjxew.json" trigger="loop-on-hover" colors="primary:#ffffff,secondary:#b4b4b4" style="width:100px;height:100px" class="footer-icon"></lord-icon>
+              </p>
+              <h3 class="h2 fw-bold">Visitanos!</h3>
+              <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9868764920675!2d-58.50626478416144!3d-34.85655707842811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd13e3bc7b6c7%3A0xd9970de89e32ab48!2sLas%20Toscas%20Canning%20Shopping!5e0!3m2!1ses!2sar!4v1632415749104!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+          </div>
         </div>
-        <div class="seguinos">
-            <h2 class="titulosFooter">Seguinos</h2>
-            <a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
-            <a href="https:www.pinterest.com"><i class="fab fa-pinterest-square"></i></a>
-            <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
-        </div>
-        <div class="ubicacion"><!-- Ubicación -->
-            <h2 class="titulosFooter">Visitanos!</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.9868764920675!2d-58.50626478416144!3d-34.85655707842811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd13e3bc7b6c7%3A0xd9970de89e32ab48!2sLas%20Toscas%20Canning%20Shopping!5e0!3m2!1ses!2sar!4v1632415749104!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                
-        </div>
-        <div class="mediosDePago"><!-- Medios de Pago -->
-            <h2 class="titulosFooter">Medios de pago</h2>
-                <img src="../../img/visa.png" alt="visa" height="25" width="40">
-                <img src="../../img/mastercard.png" alt="mastercard" height="25" width="40">
-                <img src="../../img/amex.png" alt="american express" height="25" width="40">
-                <img src="../../img/diners.png" alt="diners club" height="25" width="40">
-                <img src="../../img/mercadopago.png" alt="mercadopago" height="25" width="40">
-                <img src="../../img/rapipago.png" alt="rapipago" height="25" width="40">                        
-                <img src="../../img/pagofacil.png" alt="pagofacil" height="25" width="40">
-        </div>  
-            <hr>
-    </footer>
-        <div id="copyright">
-            <p>© Copyrigth 2021 | Todos los derechos reservados.</p>
-        </div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      </div>
+      <div class="container container__mt" data-aos="fade-down"><!-- Medios de Pago -->
+        <h3 class="h2 col footer--MDP__Center fw-bold">Medios de pago</h3>
+          <div class="container">
+            <div class="row row-cols-7">
+              <img src="../../img/visa.png" alt="visa" class="col footer--MDP__img">
+              <img src="../../img/mastercard.png" class="col footer--MDP__img" alt="mastercard">
+              <img src="../../img/amex.png" alt="american express" class="col footer--MDP__img">
+              <img src="../../img/diners.png" alt="diners club" height="25" class="col footer--MDP__img" width="40">
+              <img src="../../img/mercadopago.png" alt="mercadopago" class="col footer--MDP__img">
+              <img src="../../img/rapipago.png" alt="rapipago" class="col footer--MDP__img">
+              <img src="../../img/pagofacil.png" alt="pagofacil" class="col footer--MDP__img">
+            </div>
+          </div>
+      </div>
+      </div>
+      <div id="copyright">
+          <p>© Copyrigth 2021 | Todos los derechos reservados.</p>
+      </div>
+  </footer>
+  <!-- BS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
 </body>
 </html>

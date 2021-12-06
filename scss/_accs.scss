@@ -1,25 +1,16 @@
- @mixin imgSizes($width, $height) {
-     height: $height;
-     width: $width;
- }
-
- .fotosHombre{
-     @include imgSizes(225px, 300px)
- }
-
-#hombres{
-    margin-top: 150px;
+#accesoriosImg{
+    margin-bottom: 40px;
 }
 
-.hombres__productos{
+.accs__productos{
     text-align: center;
 }
 
-.hombres__productos div > p {
+.accs__productos div > p {
     font-style: italic;
 }
 
-.hombres__productos div > input[type=submit]{
+.accs__productos div > input[type=submit]{
     color: white;
     background-color: #000000;
     font-size: 20px;
@@ -30,22 +21,22 @@
     border-radius: 4px;
 }
 
-.hombres__productos div > input[type=submit]:hover{
+.accs__productos div > input[type=submit]:hover{
     background-color: #fff;
     color: black;
     border: black 2px solid;
 }
 
-.hombres__productos .col{
+.accs__productos .col{
     height: 35em;
 }
 
-.hombres__productos .row{
+.accs__productos .row{
     margin-bottom: 25px;
 }
 
 @media (max-width:992px) {
-    .hombres__talles{
+    .accs__talles{
         margin-bottom: 50px;
     }
 }

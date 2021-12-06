@@ -43,12 +43,23 @@ footer i:hover{
     footer{
         text-align: center;
     }
+
+    .footer--ubicacion p iframe{
+        width: 300px;
+        height: 200px;
+    }
+    
 }
 
 @media (min-width: 992px){
     .footer--ubicacion p .footer-icon{
         display: none;
     }
+    .footer--ubicacion p iframe{
+        width: 400px;
+        height: 300px;
+    }
+    
 }
 .footer--MDP__img{
     width: 25px;

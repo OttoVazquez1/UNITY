@@ -13,3 +13,49 @@
 .info__newsletter{
     text-align: center;
 }
+
+.newsletter{
+    margin-bottom: 60px;
+    margin-left: 30px;
+}
+
+
+.info__newsletter input[type=email]{
+    background-color: #000;
+    color: white;
+    border: none;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    outline: none;
+}
+
+.info__FAQ details p{
+    margin-top: 5px;
+    font-style: italic;
+}
+
+
+
+.info__newsletter input[type=submit]{
+    padding: 7px 25px;
+    font-size: 12px;
+    background-color: rgb(12, 12, 12);
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    transition-duration: 0.2s;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.info__newsletter input[type=submit]:hover{
+    background-color: rgb(155, 152, 152);
+    color: black;
+    border: 2px black solid;
+}
+
+
+/* Nosotros */
+#nosotros{
+    margin-left: 30px;
+}
+
